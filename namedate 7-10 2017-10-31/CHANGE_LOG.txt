@@ -1,0 +1,168 @@
+NAMEDATE Version 7.10
+Copyright (c) 1999, 2002-2007, 2009, 2014, 2015, 2016, 2017 by James Greene. 
+All rights reserved. http://www.informatics-consulting.de
+
+[31-Oct-2017] - Version 7.10
+* Added the handling for square braces for -Z and -ZZ formats. Enclosing part
+  of the string in [braces] will make that part of the text literal, meaning 
+  that no substitution will take place. -ZZ:"Sample-Ymd" would be interpreted 
+  as "(Seconds)(Weekday)(Month)(AM/PM)le-(Year)(Month)(Day)"  while 
+  "[Sample-]Ymd" would be interpreted as "Sample-(Year)(Month)(Day)".
+
+[14-May-2017] - Version 7.00
+* Added the -ME / --Exif command to read Exif date information from JPEG files.
+  If Exif data is available, it will be used to determine the original file 
+  date. If no Exif data is available, -ME uses the file timestamp (same as -M). 
+* Complete re-design of the command line processor. NameDate now accepts both
+  short (single - or /) and long (double --) commands.
+* Added the @filename command line parameter to open and process commands from
+  a command file. 
+* The -BD (dynamic buffer allocation) option is now the default behaviour. The
+  -BD command remains for backwards compatibility, but is not needed. If the 
+  -B=<n> option is used, the dynamic allocation is turned off and the number of
+  files per folder is limited to <n>. 
+* The -SZ command has been added. When -SZ is specified along with -S="dir" or 
+  -SM="dir", the directory name is processed like the -ZZ format option, 
+  replacing the format tokens (e.g. Ymd) with the current date. Note that any 
+  -A (adjust) or -O (offset) commands processed before the -SZ flag will be 
+  applied to the date. Those defined after the -SZ and -S commands will not 
+  affect the directory name.
+* Compliled with gcc 5.3.0 and tested on Windows 10 (64 bit).
+
+[08-Dec-2016] - Version 6.15
+* Added the /G flag to use UTC (GMT) instead of the local time on the computer.
+* Simplified the code used to make offset adjustments (/Axy and /Oxy) to support
+  the /G flag correctly. It is likely that these functions were the source of 
+  some error reports I had been receiving. 
+* Added the /OW[n] option to adjust the date by [n] weeks ([n] can be positive 
+  or negative).
+* Compliled with gcc 5.3.0 and tested on Windows 10 (64 bit).
+  
+[06-Jan-2015] - Version 6.14
+* Fixed a logic error in the new /BD command which restricted the number to
+  265 files.
+
+[05-Jan-2015] - Version 6.13
+* Added the /SM:"..." flag to allow "moving" files between two drives. The /SM 
+  flag implies the /C (Copy) flag, and then deletes the original file when the
+  copy is successful.
+
+[04-Jan-2015] - Version 6.12
+* Added the /BD flag to allow NameDate to dynamically calculate how many files 
+  need to be renamed and allocate the buffers accordingly.
+* Added the /P flag to allow NameDate to simulate the rename actions (useful 
+  for debugging). To capture the output into a text file, use 
+	NAMEDATE [your options] 2> NDOUT.TXT
+* Fixed a small memory leak in the dorename() function (one of the allocated 
+  memory buffers wasn't being freed correctly). 
+* Fixed the bug where empty filenames were being reported.
+
+[02-May-2014] - Version 6.11
+* Recompliled to address an error reported with the the /S option.
+
+[24-Jun-2009] - Version 6.10
+* The /A and /O options have been changed/expanded. /A adjusts the time by a 
+  given number of hours, minutes or seconds. /O adjusts the date by a given 
+  number of years, months or days. Additional logic has been added to ensure 
+  that the resulting date is always valid, e.g. subtracting one month from 
+  March 31st will return February 28th (or 29th, in the case of a leap year). 
+  Wrapping of years (e.g. subtracting 6 months from March 31st will return 
+  September 30th of the previous year). Existing scripts which use the "old" 
+  /A and /O switches will still work, but will generate the following warning: 
+  -- Depreciated Parameter: /O[n]. Assuming /OD[n].
+* The /V command has been implemented to display the NAMEDATE version and 
+  license information.
+* The /? command has been documented.
+
+[19-Jun-2009] - Version 6.02
+* The /KK option has been added. When used together with /D, the target 
+  directory will be deleted including any files it may have contained!
+  Use the /KK option carefully. You have been warned.
+
+[08-Sep-2007] - Version 6.00
+* Added the locale options /E and /EE, enabling different languages.
+
+[26-May-2007] - Version 5.21
+* Fixed an error that prevented /Y from working properly in v5.2.
+
+[24-May-2007] - Version 5.2
+* Added the new /L option so that NAMEDATE will assume that the extension 
+  begins with the LAST period in a filename.
+* Several internal code changes were required to support this new option.
+
+[24-Nov-2006] - Version 5.1
+* When using the /S option when the source file was also in a sub-folder, 
+  NAMEDATE assumed that the target was a sub-directory of the source folder. 
+  This has been fixed.
+* New! When using the /S option, and the target directory doesn't exist, 
+  NAMEDATE will now attempt to create it.
+  
+[23-Nov-2005] - Version 5.04
+* Fixed a "file not found" error when the filename included a subdirectory 
+  and wildcards.
+* Fixed a crash when using the /F option.
+
+[08-Feb-2005] - Version 5.03
+* The /U parameter should now work correctly when used with the /Z option.
+
+Version 5.01:
+* Fixed a bug that prevented the /Z:"format" option from working correctly.
+
+Version 5.0:
+* Added the /ZZ:"format" option to allow full control of the filename.
+* Changed the behaviour of NameDate to prompt before a file is copied, deleted 
+  or renamed. To automatically reply "yes" to these prompts (if you are using 
+  NameDate in a batch file), be sure to add the /Y option to the NameDate 
+  command line.
+* Added the /B:num option to allow larger directory listings. For example, 
+  /B:5000 tells NameDate to reserve a buffer for up to 5,000 filenames per 
+  directory.
+
+Version 4.1:
+* Added the /S:"path" option to move or copy the renamed file into a new 
+  directory.
+* Added the /8 option that renames the file to an 8.3-compatible filename.
+
+Version 4.01:
+* Corrected a bug in the /O option that was introduced in version 4.0.
+
+Version 4.0:
+* Added the /Z:"format" option to allow more flexibility how the date and time 
+  are represented.
+* /N, /R and /T are now internally converted to /Z:"..." formats.
+* Added the /Anum option to add or subtract num minutes from the time.
+* Added the /K option that will delete the target file if it already exists.
+* Added the /Q option to reduce the amount of "noise" that NAMEDATE produces 
+  when called from a batch file.
+
+Version 3.2:
+* Added the /C flag, to make a COPY of the file instead of simply renaming it.
+* Added version information to the NameDate executable.
+* The source code now includes a MAKE file.
+
+Version 3.1:
+* Added the /M flag, to use the file's own date/time instead of the current 
+  time.
+* Added the /Onum option to add or subtract num days from the date. For example, 
+  if today is the 15th of May, 2003, using /O5 will add 20-May-2003 to the 
+  filename. On the other hand, using /O-5 will add 10-May-2003 to the filename. 
+  Please note that the /M and /Onum options may be used together.
+* Discontinued the flag /W flag since it wasn't needed anymore.
+
+Version 3.0:
+* The filename.ext can now include path information. For example,
+  C:\> NAMEDATE d:\backup\*.zip 
+  will now correctly rename all .ZIP files in the folder D:\BACKUP.
+* Changed the behaviour of the /W flag. Now, NAMEDATE assumes that a wildcard 
+  is used, unless /W is specified. If you don't use wildcards, NAMEDATE will 
+  still work without the /W flag.
+* Added the /D flag, so that you can choose if you want subdirectories to be 
+  renamed or not. Please note that NAMEDATE does not recurse down into the 
+  directories, it will just rename any directory names that it finds in the 
+  folder that match the wildcard you specified. This flag is only recognised 
+  when wildcards are turned on (in other words, when /W is NOT specified.)
+* Added the /H flag, so that you can choose if you want hidden or system files 
+  also to be included in the renaming function. This flag is only recognised 
+  when wildcards are turned on (/W is NOT specified.)
+* The . and .. directories are now automatically skipped, so that there are no 
+  more error messages when using the *.* wildcard.

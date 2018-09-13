@@ -1,0 +1,178 @@
+Proyecto Avance #1
+------------------
+
+Fecha entrega avance: Domingo 23-setiembre-2018 18hrs (6pm), solo aula virtual.
+Favor leer todo el documento adjunto!
+
+
+Indicaciones Generales:
+=======================
+
+Trabajar en carpeta: C:\proyecto en windows
+o en /home/usuario/proyecto  en Linux solo Ubuntu 16.04 (usuario según usuario que trabajen, ejemplo ubuntu, root, etc)
+
+Los respaldos en: 
+C:\proyecto\respaldos
+/home/usuario/proyecto/respaldos
+
+Los Logs en:
+C:\proyecto\logs
+/home/usuario/proyecto/logs
+
+En la carpeta principal C:\proyecto deben estar los: .bat, .sql, .exe (de las herramientas, como hicimos en clases!)
+
+
+ Crear un menú con sub-opciones de menu (un .BAT llama otro .BAT y controlar cuando regresa)
+   En el caso de Linux es un archivo .sh
+   
+   Si el proyecto no incluye video, debe incluir una presentación PPT donde explique el proyecto
+   y las pantalla (o bien hace el video, pero es opcional para los individuales o pareja)
+Al subur al aula virtual debe ser menor a 50MB, si el video es muy pesado subir indicacion
+del link de video en YOUTUBE.
+
+Todo el proyecto comprido, con archivos de ejemplo inclusive de sus ejecuciones
+comprimido como :  proy1_apellido1_apellido2_.7z
+(o sea los primero apellido de los integrantes), si es individual nombre y apellido ej:
+proy1_manuel_espinoza.7z
+
+En las opciones de menu, debe estar los nombres completos de todos los participantes.
+si es individual indicar su nombre en el menú (que se despliegue en el menú principal.)
+Si es en grupo SOLO UNO DE LOS MIEMBROS SUBE EL TRABAJO!
+
+Se rebaja 33% por cada día de atraso en la entrega, siendo un rebajo de 1.375% por cada hora
+tarde, la hora cuenta desde el primer minuto de entrega de la hora siguiente.
+26 set 6pm será la hora más tarde de entrega. de proyecto #1
+
+==============================================================================================
+1. Respaldos
+2. Recuperación
+====================
+
+1. Respaldos
+con 2 opciones: 
+1.1. Respaldo de un usuario Oracle (si es postgres una base de datos)
+1.2. Respaldo completo Oracle (si es postgres todas las bases de datos)
+1.3. Regresar a menú principal
+(Cuando pide la sub-opción solo indica 1 o 2 o 3), también puede usar letras a, b, c
+
+La segunda opción será:
+2. Recuperación
+2.1. Recuperar de un usuario
+2.2  Regresar a menú principal
+(Cuando pide la sub-opción solo indica 1 o 3), también puede usar letras a, b, c
+
+
+Nota: El postgreSQL, aescrypt y 7zip existen para Ubuntu 16 (así que solo usar ese!) puede ser en maquina virtual.
+
+
+
+Alcance de Trabajo individual 1 persona:
+========================================
+a) Pedir el usuario por pantalla y el nombre del archivo igual al usario ej:  si colocó el usuario HR, el archivo
+   final queda:
+   HR(2018-08-30)-(09-30-25).7z
+   En el caso del respaldo completo sería:
+   COMPLETO(2018-08-30)-(09-35-25).7z
+b) Comprimir, Encriptar y renombrar (NAMEDATE) los archivos
+c) En las opciones de Recuperar, debe buscar el archivo .7z.aes mas "viejo"
+d) Plataforma Windows con Oracle
+e) Generar un .LOG por todos los respaldos
+    respaldos.log
+	agregando cuando inició, finalizó, qué se respaldó parametros, nombre final del archivo
+	-Puede trabajar el archivo en un directorio C:\proyecto\temporal
+	-para identificar el archivo actual que está procesando.
+	-separar cada respaldo con "=============================================="
+	-enviar además el STDOUT y el STDERR 
+
+Alcance de Trabajo 2 personas:
+========================================
+Además de lo anterior.
+a) Parametro .INI para indicar
+Nombre del Archivo del Respaldo COMPLETO:   FULL
+
+Entonces genera:
+COMPLETO(2018-08-30)-(09-35-25).7z
+
+b) Debe generar un menú de opciones cuando tiene muchos respaldos de usuarios para restaurar
+listando en pantalla los archivos de respaldo de usuarios ejemplo:
+
+HR(2018-08-30)-(09-30-25).7z
+HR(2018-08-30)-(10-30-25).7z
+HR(2018-08-30)-(11-30-25).7z
+
+Y capturar el numero de respaldo posicional (ejemplo si indica 2, selecciona: HR(2018-08-30)-(10-30-25).7z)
+
+También podría mostrarse así:
+1. HR(2018-08-30)-(09-30-25).7z
+2. HR(2018-08-30)-(10-30-25).7z
+3. HR(2018-08-30)-(11-30-25).7z
+etc... (o sea indicar con un numero de archivo, 
+mínimo 3, máximo 9 archivos para no complicar)
+
+c) Opción de ejecutar respaldo en frío completo de los archivos de la base de datos
+bajar servicios
+comprimir
+encriptar
+renombrar  (NAMEDATE)
+
+d) Log separado por cada tipo de respaldos
+COMPLETO.LOG
+USUARIO.LOG
+
+Además logs para las restauraciones
+REST_COMPLETO.LOG
+REST_USUARIOS.LOG
+
+Alcance de Trabajo 3 personas:
+========================================
+Todo lo anterior (de 1 y 2 personas) más:
+
+a) En Windows pero con plataforma POSTGRESQL
+b) Mostrar los LOGS de cada respaldo (No el log completo, solo el respaldo o restauración recién terminado) con NOTEPAD.EXE (normal, no como paráemtro)
+   pero además debe agregarse a cada Log SEPARADO:
+
+Log separado por cada tipo de respaldos
+COMPLETO.LOG
+USUARIO.LOG
+
+Además logs para las restauraciones
+REST_COMPLETO.LOG
+REST_USUARIOS.LOG
+
+Crear VIDEO (un formato que no quede muy grande) si es muy grande subir en youtube en algún canal y enviar LINK.
+En el video TODOS los integrantes deben explicar una parte de las opciones con su voz, usar una musica de 
+fondo suave y evitar que haya ruidos de fondo o interrupciones.
+El video debe tener una portada con los nombres de los integrandes, una introducción del alcance del proyecto,
+mostrar los .BAT, .LSQ
+
+
+Alcance de Trabajo 4 personas:
+========================================
+Todo lo anterior (de 1, 2 y 3 personas) más:
+Cambiar de Windows a Linux Ubuntu 16.04
+
+Crear opciones adicionales.
+
+3. Bases de Datos
+
+3.1 Borrar Base de Datos
+3.2 Crear Base de Datos
+3.3 Crear tablas en Base de Datos
+
+En las opciones captura el nombre de la base de datos a Borrar o Crear.
+En la opción 3.3 puede correr un script con 5 tablas de pruebas, y 3 registros en cada tabla 
+(no necesita PK, ni FK, pero si le crea PK y FK no hay problema!)
+
++Para estas opciones de Bases de Datos, Crear los archivos .LOG
++Como se hará en Linux en linea de comando, en lugar de NOTEPAD.EXE los logs se muestran en pantalla, y presiona un enter
+para continuar regresando al menú correspondiente!
+
+
+En la opción de restaurar base de datos (puede respaldar por ejemplo la base de datos PRUEBA1 en la BD PRUEBA3)
+
+Nota: Se incorporarán aclaraciones o explicaciones al enunciado del Proyecto #1
+
+Se dará consulta a estudiantes y puede ir mostrando su avance de proyecto
+Lunes y Jueves de 2pm a 3pm, de 5:20pm a 6pm en el aula.  de 7:40pm a 8:00pm en el aula
+
+en mi cubiculo en 1.er piso.
