@@ -1,0 +1,5 @@
+userid=system/root 
+owner=hr  
+file=hr.dmp 
+log=hr.log 
+statistics=none 

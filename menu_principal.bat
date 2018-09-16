@@ -17,13 +17,7 @@ set choice=
 set /p choice=Indique la tarea correspondiente:
 if not '%choice%'=='' set choice=%choice:~0,2%
 if '%choice%'=='1' goto OptRespaldos
-REM if '%choice%'=='2' goto OptCreaTabla
-REM if '%choice%'=='3' goto OptBorraTabla
-REM if '%choice%'=='4' goto OptListarUsuarios
-REM if '%choice%'=='5' goto OptListarObjetosTest
-REM if '%choice%'=='6' goto OptCrearTablespace
-REM if '%choice%'=='7' goto OptDropTablespace
-REM if '%choice%'=='8' goto OptInsertar
+if '%choice%'=='2' goto OptRecuperacion
 if '%choice%'=='0' goto OptSalir
 ECHO "%choice%" Opcion incorrecta.
 pause
@@ -34,6 +28,9 @@ goto start
 .\menu_respaldos.bat
 goto start
 
+:OptRecuperacion
+.\menu_recuperacion.bat
+goto start
 
 :OptSalir
 ECHO Sale del programa
