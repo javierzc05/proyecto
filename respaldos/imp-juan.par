@@ -1,0 +1,5 @@
+userid=system/root 
+fromuser=juan  
+touser=pedro 
+file=.\respaldos\juan.dmp 
+log=.\respaldos\imp-juan.log 

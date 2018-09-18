@@ -1,0 +1,13 @@
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+
+Export file created by EXPORT:V11.02.00 via conventional path
+import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+import server uses AL32UTF8 character set (possible charset conversion)
+. importing JUAN's objects into PEDRO
+IMP-00015: following statement failed because the object already exists:
+ "CREATE TABLE "TEMP" ("TEMP" VARCHAR2(30))  PCTFREE 10 PCTUSED 40 INITRANS 1"
+ " MAXTRANS 255 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 F"
+ "REELIST GROUPS 1 BUFFER_POOL DEFAULT)                     LOGGING NOCOMPRES"
+ "S"
+Import terminated successfully with warnings.

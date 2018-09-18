@@ -2,7 +2,11 @@
 cls
 :start
 cls
-ECHO. --Menu Principal---
+ECHO. ------------------------
+ECHO. --JAVIER ZALDIVAR COTO--
+ECHO. ------------------------
+ECHO. -----Menu Principal-----
+ECHO. ------------------------
 ECHO 1. Respaldo de un usuario
 ECHO 2. Recuperacion
 REM ECHO 3. Borrar Tabla

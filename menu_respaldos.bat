@@ -2,7 +2,11 @@
 cls
 :start
 cls
-ECHO. --Menu Respaldos---
+ECHO. ------------------------
+ECHO. --JAVIER ZALDIVAR COTO--
+ECHO. ------------------------
+ECHO. -----Menu Respaldos-----
+ECHO. ------------------------
 ECHO 1.1 Respaldo de un usuario
 ECHO 1.2 Respaldo completo Oracle
 ECHO 1.3 Regresar al menu principal

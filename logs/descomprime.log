@@ -1,0 +1,21 @@
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive for archives:
+1 file, 9891 bytes (10 KiB)
+
+Extracting archive: .\respaldos\hr(2018-09-18)-(00-08-55).7z
+--
+Path = .\respaldos\hr(2018-09-18)-(00-08-55).7z
+Type = 7z
+Physical Size = 9891
+Headers Size = 166
+Method = LZMA2:48k
+Solid = +
+Blocks = 1
+
+Everything is Ok
+
+Files: 2
+Size:       40690
+Compressed: 9891

@@ -1,0 +1,5 @@
+userid=system/root 
+fromuser=hr  
+touser=pedro 
+file=.\respaldos\hr.dmp 
+log=.\respaldos\imp-hr.log 

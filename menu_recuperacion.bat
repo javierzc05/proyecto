@@ -2,7 +2,11 @@
 cls
 :start
 cls
-ECHO. --Menu Recuperacion---
+ECHO. ------------------------
+ECHO. --JAVIER ZALDIVAR COTO--
+ECHO. ------------------------
+ECHO. ---Menu Recuperacion----
+ECHO. ------------------------
 ECHO 2.1 Recuperacion de un usuario
 ECHO 2.2 Regresar al menu principal
 
@@ -17,7 +21,7 @@ ECHO.
 goto start
 
 :OptRecuperacionUsuario
-start .\recuperacion_usuario.bat
+start .\recuperar_usuario.bat
 goto start
 
 
