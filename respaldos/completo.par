@@ -1,0 +1,5 @@
+userid=system/root
+full=y
+file=.\respaldos\completo.dmp
+log=.\respaldos\completo.log
+statistics=none

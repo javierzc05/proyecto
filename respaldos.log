@@ -1,0 +1,80 @@
+====================================================== 
+Inicio hr(2018-09-19)-(23-51-46).7z.aes respaldar                          
+====================================================== 
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9885 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-19)-(23-51-46).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-19)-(23-51-46).7z.aes respaldar                           
+====================================================== 
+                                                       
+====================================================== 
+Inicio hr(2018-09-19)-(23-52-17).7z.aes respaldar                          
+====================================================== 
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9886 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-19)-(23-52-17).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-19)-(23-52-17).7z.aes respaldar                           
+====================================================== 
+                                                       

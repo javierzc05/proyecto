@@ -4,13 +4,136 @@ Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Pro
 Export file created by EXPORT:V11.02.00 via conventional path
 import done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
 import server uses AL32UTF8 character set (possible charset conversion)
-. importing HR's objects into PEDRO
-. . importing table                    "COUNTRIES"         25 rows imported
-. . importing table                  "DEPARTMENTS"         27 rows imported
-. . importing table                    "EMPLOYEES"        107 rows imported
-. . importing table                         "JOBS"         19 rows imported
-. . importing table                  "JOB_HISTORY"         10 rows imported
-. . importing table                    "LOCATIONS"         23 rows imported
-. . importing table                      "REGIONS"          4 rows imported
-About to enable constraints...
-Import terminated successfully without warnings.
+. importing HR's objects into WALTER
+IMP-00015: following statement failed because the object already exists:
+ "CREATE SEQUENCE "LOCATIONS_SEQ" MINVALUE 1 MAXVALUE 9900 INCREMENT BY 100 S"
+ "TART WITH 3300 NOCACHE NOORDER NOCYCLE"
+IMP-00015: following statement failed because the object already exists:
+ "CREATE SEQUENCE "DEPARTMENTS_SEQ" MINVALUE 1 MAXVALUE 9990 INCREMENT BY 10 "
+ "START WITH 280 NOCACHE NOORDER NOCYCLE"
+IMP-00015: following statement failed because the object already exists:
+ "CREATE SEQUENCE "EMPLOYEES_SEQ" MINVALUE 1 MAXVALUE 99999999999999999999999"
+ "99999 INCREMENT BY 1 START WITH 207 NOCACHE NOORDER NOCYCLE"
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "COUNTRIES" ("COUNTRY_ID" CHAR(2) CONSTRAINT "COUNTRY_ID_NN" N"
+ "OT NULL ENABLE, "COUNTRY_NAME" VARCHAR2(40), "REGION_ID" NUMBER,  CONSTRAIN"
+ "T "COUNTRY_C_ID_PK" PRIMARY KEY ("COUNTRY_ID") ENABLE ) ORGANIZATION INDEX "
+ " PCTFREE 10 INITRANS 2 MAXTRANS 255 STORAGE(INITIAL 65536 NEXT 1048576 MINE"
+ "XTENTS 1 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)                "
+ "    LOGGING NOCOMPRESS PCTTHRESHOLD 50"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "DEPARTMENTS" ("DEPARTMENT_ID" NUMBER(4, 0), "DEPARTMENT_NAME""
+ " VARCHAR2(30) CONSTRAINT "DEPT_NAME_NN" NOT NULL ENABLE, "MANAGER_ID" NUMBE"
+ "R(6, 0), "LOCATION_ID" NUMBER(4, 0))  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXT"
+ "RANS 255 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 FREELI"
+ "ST GROUPS 1 BUFFER_POOL DEFAULT)                    LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "EMPLOYEES" ("EMPLOYEE_ID" NUMBER(6, 0), "FIRST_NAME" VARCHAR2"
+ "(20), "LAST_NAME" VARCHAR2(25) CONSTRAINT "EMP_LAST_NAME_NN" NOT NULL ENABL"
+ "E, "EMAIL" VARCHAR2(25) CONSTRAINT "EMP_EMAIL_NN" NOT NULL ENABLE, "PHONE_N"
+ "UMBER" VARCHAR2(20), "HIRE_DATE" DATE CONSTRAINT "EMP_HIRE_DATE_NN" NOT NUL"
+ "L ENABLE, "JOB_ID" VARCHAR2(10) CONSTRAINT "EMP_JOB_NN" NOT NULL ENABLE, "S"
+ "ALARY" NUMBER(8, 2), "COMMISSION_PCT" NUMBER(2, 2), "MANAGER_ID" NUMBER(6, "
+ "0), "DEPARTMENT_ID" NUMBER(4, 0))  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRAN"
+ "S 255 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 FREELIST "
+ "GROUPS 1 BUFFER_POOL DEFAULT)                    LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "JOBS" ("JOB_ID" VARCHAR2(10), "JOB_TITLE" VARCHAR2(35) CONSTR"
+ "AINT "JOB_TITLE_NN" NOT NULL ENABLE, "MIN_SALARY" NUMBER(6, 0), "MAX_SALARY"
+ "" NUMBER(6, 0))  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 STORAGE(INIT"
+ "IAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 FREELIST GROUPS 1 BUFFER_PO"
+ "OL DEFAULT)                    LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "JOB_HISTORY" ("EMPLOYEE_ID" NUMBER(6, 0) CONSTRAINT "JHIST_EM"
+ "PLOYEE_NN" NOT NULL ENABLE, "START_DATE" DATE CONSTRAINT "JHIST_START_DATE_"
+ "NN" NOT NULL ENABLE, "END_DATE" DATE CONSTRAINT "JHIST_END_DATE_NN" NOT NUL"
+ "L ENABLE, "JOB_ID" VARCHAR2(10) CONSTRAINT "JHIST_JOB_NN" NOT NULL ENABLE, "
+ ""DEPARTMENT_ID" NUMBER(4, 0))  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 25"
+ "5 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 FREELIST GROU"
+ "PS 1 BUFFER_POOL DEFAULT)                    LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "LOCATIONS" ("LOCATION_ID" NUMBER(4, 0), "STREET_ADDRESS" VARC"
+ "HAR2(40), "POSTAL_CODE" VARCHAR2(12), "CITY" VARCHAR2(30) CONSTRAINT "LOC_C"
+ "ITY_NN" NOT NULL ENABLE, "STATE_PROVINCE" VARCHAR2(25), "COUNTRY_ID" CHAR(2"
+ "))  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 STORAGE(INITIAL 65536 NEX"
+ "T 1048576 MINEXTENTS 1 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT)  "
+ "                  LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00017: following statement failed with ORACLE error 1950:
+ "CREATE TABLE "REGIONS" ("REGION_ID" NUMBER CONSTRAINT "REGION_ID_NN" NOT NU"
+ "LL ENABLE, "REGION_NAME" VARCHAR2(25))  PCTFREE 10 PCTUSED 40 INITRANS 1 MA"
+ "XTRANS 255 STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 FREELISTS 1 FREE"
+ "LIST GROUPS 1 BUFFER_POOL DEFAULT)                    LOGGING NOCOMPRESS"
+IMP-00003: ORACLE error 1950 encountered
+ORA-01950: no privileges on tablespace 'SYSTEM'
+IMP-00015: following statement failed because the object already exists:
+ "CREATE FORCE VIEW "WALTER"."EMP_DETAILS_VIEW"                          ("EM"
+ "PLOYEE_ID","JOB_ID","MANAGER_ID","DEPARTMENT_ID","LOCATION_ID","COUNTRY_ID""
+ ","FIRST_NAME","LAST_NAME","SALARY","COMMISSION_PCT","DEPARTMENT_NAME","JOB_"
+ "TITLE","CITY","STATE_PROVINCE","COUNTRY_NAME","REGION_NAME") AS "
+ "SELECT"
+ "  e.employee_id,"
+ "  e.job_id,"
+ "  e.manager_id,"
+ "  e.department_id,"
+ "  d.location_id,"
+ "  l.country_id,"
+ "  e.first_name,"
+ "  e.last_name,"
+ "  e.salary,"
+ "  e.commission_pct,"
+ "  d.department_name,"
+ "  j.job_title,"
+ "  l.city,"
+ "  l.state_province,"
+ "  c.country_name,"
+ "  r.region_name"
+ "FROM"
+ "  employees e,"
+ "  departments d,"
+ "  jobs j,"
+ "  locations l,"
+ "  countries c,"
+ "  regions r"
+ "WHERE e.department_id = d.department_id"
+ "  AND d.location_id = l.location_id"
+ "  AND l.country_id = c.country_id"
+ "  AND c.region_id = r.region_id"
+ "  AND j.job_id = e.job_id"
+ "WITH READ ONLY"
+IMP-00015: following statement failed because the object already exists:
+ "CREATE PROCEDURE add_job_history"
+ "  (  p_emp_id          job_history.employee_id%type"
+ "   , p_start_date      job_history.start_date%type"
+ "   , p_end_date        job_history.end_date%type"
+ "   , p_job_id          job_history.job_id%type"
+ "   , p_department_id   job_history.department_id%type"
+ "   )"
+ "IS"
+ "BEGIN"
+ "  INSERT INTO job_history (employee_id, start_date, end_date,"
+ "                           job_id, department_id)"
+ "    VALUES(p_emp_id, p_start_date, p_end_date, p_job_id, p_department_id);"
+ "END add_job_history;"
+IMP-00015: following statement failed because the object already exists:
+ "CREATE PROCEDURE secure_dml"
+ "IS"
+ "BEGIN"
+ "  IF TO_CHAR (SYSDATE, 'HH24:MI') NOT BETWEEN '08:00' AND '18:00'"
+ "        OR TO_CHAR (SYSDATE, 'DY') IN ('SAT', 'SUN') THEN"
+ "	RAISE_APPLICATION_ERROR (-20205,"
+ "		'You may only make changes during normal office hours');"
+ "  END IF;"
+ "END secure_dml;"
+Import terminated successfully with warnings.
