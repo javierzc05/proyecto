@@ -17,6 +17,9 @@ if not '%choice%'=='' set choice=%choice:~0,2%
 if '%choice%'=='1' goto OptRespaldoUsuario
 if '%choice%'=='2' goto OptRespaldoCompleto
 if '%choice%'=='3' goto OptSalir
+if '%choice%'=='a' goto OptRespaldoUsuario
+if '%choice%'=='b' goto OptRespaldoCompleto
+if '%choice%'=='c' goto OptSalir
 ECHO "%choice%" Opcion incorrecta.
 pause
 ECHO.

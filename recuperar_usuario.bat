@@ -27,11 +27,12 @@ set /p Usuario2=Indique el nuevo usuario:
 
 sqlplus /nolog @.\crear_usuario.sql %Usuario2% 
 
+REM Crea el archivo importar
 echo userid=system/root > .\respaldos\imp-%Usuario%.par
 echo fromuser=%Usuario%  >>.\respaldos\imp-%Usuario%.par
 echo touser=%Usuario2% >>.\respaldos\imp-%Usuario%.par
 echo file=.\respaldos\%Usuario%.dmp >>.\respaldos\imp-%Usuario%.par
-echo log=.\respaldos\imp-%Usuario%.log >>.\respaldos\imp-%Usuario%.par
+echo log=.\logs\imp-%Usuario%.log >>.\respaldos\imp-%Usuario%.par
 imp parfile=.\respaldos\imp-%Usuario%.par
 pause
 exit

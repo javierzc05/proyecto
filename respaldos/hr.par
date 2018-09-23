@@ -1,0 +1,5 @@
+userid=system/root 
+owner=hr  
+file=.\respaldos\hr.dmp 
+log=.\logs\hr.log 
+statistics=none 

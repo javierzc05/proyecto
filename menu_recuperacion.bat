@@ -15,6 +15,8 @@ set /p choice=Indique la tarea correspondiente:
 if not '%choice%'=='' set choice=%choice:~0,2%
 if '%choice%'=='1' goto OptRecuperacionUsuario
 if '%choice%'=='2' goto OptSalir
+if '%choice%'=='a' goto OptRecuperacionUsuario
+if '%choice%'=='b' goto OptSalir
 ECHO "%choice%" Opcion incorrecta.
 pause
 ECHO.

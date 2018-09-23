@@ -1,6 +1,49 @@
 ====================================================== 
-Inicio hr(2018-09-19)-(23-51-46).7z.aes respaldar                          
+Inicio hr(2018-09-21)-(21-18-53).7z.aes respaldar                          
 ====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
 #1 Comprimir el archivo                                
 
 7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
@@ -14,7 +57,7 @@ Add new data to archive: 2 files, 40690 bytes (40 KiB)
 
 
 Files read from disk: 2
-Archive size: 9885 bytes (10 KiB)
+Archive size: 9892 bytes (10 KiB)
 Everything is Ok
 error:                                                 
 Final comprimir ====================================== 
@@ -31,16 +74,59 @@ james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
 NAMEDATE: Finished. 1 file processed.
 error:                                                 
 Directory set to .\temporal\
-RENAME 'hr.7z.aes' TO 'hr(2018-09-19)-(23-51-46).7z.aes'
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(21-18-53).7z.aes'
 Final renombrar ====================================== 
                                                        
 ====================================================== 
-Final hr(2018-09-19)-(23-51-46).7z.aes respaldar                           
+Final hr(2018-09-21)-(21-18-53).7z.aes respaldar                           
 ====================================================== 
                                                        
 ====================================================== 
-Inicio hr(2018-09-19)-(23-52-17).7z.aes respaldar                          
+Inicio hr(2018-09-21)-(23-19-54).7z.aes respaldar                          
 ====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
 #1 Comprimir el archivo                                
 
 7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
@@ -71,10 +157,342 @@ james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
 NAMEDATE: Finished. 1 file processed.
 error:                                                 
 Directory set to .\temporal\
-RENAME 'hr.7z.aes' TO 'hr(2018-09-19)-(23-52-17).7z.aes'
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(23-19-54).7z.aes'
 Final renombrar ====================================== 
                                                        
 ====================================================== 
-Final hr(2018-09-19)-(23-52-17).7z.aes respaldar                           
+Final hr(2018-09-21)-(23-19-54).7z.aes respaldar                           
+====================================================== 
+                                                       
+====================================================== 
+Inicio hr(2018-09-21)-(23-21-20).7z.aes respaldar                          
+====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9890 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(23-21-20).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-21)-(23-21-20).7z.aes respaldar                           
+====================================================== 
+                                                       
+====================================================== 
+Inicio hr(2018-09-21)-(23-29-33).7z.aes respaldar                          
+====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9890 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(23-29-33).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-21)-(23-29-33).7z.aes respaldar                           
+====================================================== 
+                                                       
+====================================================== 
+Inicio hr(2018-09-21)-(23-34-55).7z.aes respaldar                          
+====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9887 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(23-34-55).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-21)-(23-34-55).7z.aes respaldar                           
+====================================================== 
+                                                       
+====================================================== 
+Inicio hr(2018-09-21)-(23-35-35).7z.aes respaldar                          
+====================================================== 
+#0 Exportar usuario                                    
+
+Connected to: Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+Export done in WE8MSWIN1252 character set and AL16UTF16 NCHAR character set
+server uses AL32UTF8 character set (possible charset conversion)
+
+About to export specified users ...
+. exporting pre-schema procedural objects and actions
+. exporting foreign function library names for user HR 
+. exporting PUBLIC type synonyms
+. exporting private type synonyms
+. exporting object type definitions for user HR 
+About to export HR's objects ...
+. exporting database links
+. exporting sequence numbers
+. exporting cluster definitions
+. about to export HR's tables via Conventional Path ...
+. . exporting table                      COUNTRIES         25 rows exported
+. . exporting table                    DEPARTMENTS         27 rows exported
+. . exporting table                      EMPLOYEES        107 rows exported
+. . exporting table                           JOBS         19 rows exported
+. . exporting table                    JOB_HISTORY         10 rows exported
+. . exporting table                      LOCATIONS         23 rows exported
+. . exporting table                        REGIONS          4 rows exported
+. exporting synonyms
+. exporting views
+. exporting stored procedures
+. exporting operators
+. exporting referential integrity constraints
+. exporting triggers
+. exporting indextypes
+. exporting bitmap, functional and extensible indexes
+. exporting posttables actions
+. exporting materialized views
+. exporting snapshot logs
+. exporting job queues
+. exporting refresh groups and children
+. exporting dimensions
+. exporting post-schema procedural objects and actions
+. exporting statistics
+Export terminated successfully without warnings.
+Final exportar ======================================= 
+                                                       
+#1 Comprimir el archivo                                
+
+7-Zip 18.05 (x64) : Copyright (c) 1999-2018 Igor Pavlov : 2018-04-30
+
+Scanning the drive:
+2 files, 40690 bytes (40 KiB)
+
+Creating archive: .\temporal\hr.7z
+
+Add new data to archive: 2 files, 40690 bytes (40 KiB)
+
+
+Files read from disk: 2
+Archive size: 9891 bytes (10 KiB)
+Everything is Ok
+error:                                                 
+Final comprimir ====================================== 
+                                                       
+#2 Encriptar el archivo                                
+error:                                                 
+Final encriptar ====================================== 
+                                                       
+#3 Renombrar el archivo                                
+NAMEDATE: Add a date to a given filename                         Version 7.10
+Copyright ¸ 1999, 2002-2009, 2014-2017 by James Greene. All rights reserved.
+james.greene@outlook.com - www.informatics-consulting.de - ASP Member #06128
+
+NAMEDATE: Finished. 1 file processed.
+error:                                                 
+Directory set to .\temporal\
+RENAME 'hr.7z.aes' TO 'hr(2018-09-21)-(23-35-35).7z.aes'
+Final renombrar ====================================== 
+                                                       
+====================================================== 
+Final hr(2018-09-21)-(23-35-35).7z.aes respaldar                           
 ====================================================== 
                                                        

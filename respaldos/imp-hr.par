@@ -1,5 +1,5 @@
 userid=system/root 
 fromuser=hr  
-touser=walter 
+touser=juan 
 file=.\respaldos\hr.dmp 
-log=.\respaldos\imp-hr.log 
+log=.\logs\imp-hr.log 

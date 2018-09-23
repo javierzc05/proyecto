@@ -7,20 +7,19 @@ set /p Usuario=Indique el Usuario a Filtrar:
 echo userid=system/root > .\respaldos\%Usuario%.par
 echo owner=%Usuario%  >> .\respaldos\%Usuario%.par
 echo file=.\respaldos\%Usuario%.dmp >> .\respaldos\%Usuario%.par
-echo log=.\respaldos\%Usuario%.log >> .\respaldos\%Usuario%.par
+echo log=.\logs\%Usuario%.log >> .\respaldos\%Usuario%.par
 echo statistics=none >> .\respaldos\%Usuario%.par
 
 exp parfile=.\respaldos\%Usuario%.par
 
 REM Comprime
-.\apps\7z.exe a .\temporal\%Usuario%.7z .\respaldos\%Usuario%.log .\respaldos\%Usuario%.dmp 1>.\logs\comprime.log 2>.\logs\comprime.err
+.\apps\7z.exe a .\temporal\%Usuario%.7z .\respaldos\%Usuario%.dmp 1>.\logs\comprime.log 2>.\logs\comprime.err
 
 REM Encripta
 .\apps\aescrypt.exe -e -p clave123 .\temporal\%Usuario%.7z 1>.\logs\encripta.log 2>.\logs\encripta.err
 
 REM Namedate
 .\apps\namedate.exe /Y /ZZ:"F(Y-m-d)-(H-M-S).X" .\temporal\%Usuario%.7z.aes 1>.\logs\namedate.log 2>.\logs\namedate.err
-
 
 REM Guarda el nombre con namedate en una variable
 dir /b .\temporal\*.aes > Nombre.ini
@@ -36,6 +35,10 @@ REM Crea el respaldo.log
 echo ====================================================== > .\temporal\respaldo.log
 echo Inicio %NomArchivo% respaldar                          >> .\temporal\respaldo.log
 echo ====================================================== >> .\temporal\respaldo.log
+echo #0 Exportar usuario                                    >> .\temporal\respaldo.log
+type .\logs\%Usuario%.log                                   >> .\temporal\respaldo.log
+echo Final exportar ======================================= >> .\temporal\respaldo.log
+echo.                                                       >> .\temporal\respaldo.log
 echo #1 Comprimir el archivo                                >> .\temporal\respaldo.log
 type .\logs\comprime.log                                    >> .\temporal\respaldo.log
 echo error:                                                 >> .\temporal\respaldo.log
@@ -60,15 +63,12 @@ echo ====================================================== >> .\temporal\respal
 echo.                                                       >> .\temporal\respaldo.log
 type .\temporal\respaldo.log                                >> .\respaldos.log
 
-
 REM REM Abrir con NOTEPAD.EXE
 start notepad.exe .\respaldos.log
-
 
 REM Elimina archivos restantes
 del .\respaldos\%Usuario%.par
 del .\respaldos\%Usuario%.dmp
-del .\respaldos\%Usuario%.log
 del .\temporal\%Usuario%.7z
 
 exit
