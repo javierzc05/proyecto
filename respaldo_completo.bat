@@ -3,7 +3,7 @@ cls
 exp parfile=.\respaldos\completo.par
 
 REM Comprime
-.\apps\7z.exe a .\temporal\completo.7z .\respaldos\completo.log .\respaldos\completo.dmp 1>.\logs\comprime_completo.log 2>.\logs\comprime_completo.err
+.\apps\7z.exe a .\temporal\completo.7z .\respaldos\completo.dmp 1>.\logs\comprime_completo.log 2>.\logs\comprime_completo.err
 
 REM Encripta
 .\apps\aescrypt.exe -e -p clave123 .\temporal\completo.7z 1>.\logs\encripta_completo.log 2>.\logs\encripta_completo.err
@@ -25,6 +25,10 @@ REM Crea el respaldo.log
 echo ====================================================== > .\temporal\respaldo.log
 echo Inicio %NomArchivo% respaldar                          >> .\temporal\respaldo.log
 echo ====================================================== >> .\temporal\respaldo.log
+echo #0 Exportar completo                                   >> .\temporal\respaldo.log
+type .\logs\completo.log                                    >> .\temporal\respaldo.log
+echo Final exportar ======================================= >> .\temporal\respaldo.log
+echo.                                                       >> .\temporal\respaldo.log
 echo #1 Comprimir el archivo                                >> .\temporal\respaldo.log
 type .\logs\comprime_completo.log                           >> .\temporal\respaldo.log
 echo error:                                                 >> .\temporal\respaldo.log
@@ -49,10 +53,8 @@ echo ====================================================== >> .\temporal\respal
 echo.                                                       >> .\temporal\respaldo.log
 type .\temporal\respaldo.log                                >> .\respaldos.log
 
-
 REM REM Abrir con NOTEPAD.EXE
 start notepad.exe .\respaldos.log
-
 
 REM Elimina archivos restantes
 del .\respaldos\completo.dmp
